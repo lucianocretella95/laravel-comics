@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $comics = [
+        "fumetti" => [
+            "spiderman",
+            "X-men",
+            "iron man",
+            "fantastici 4"
+        ]
+        ];
+    return view('home', $comics);
 });

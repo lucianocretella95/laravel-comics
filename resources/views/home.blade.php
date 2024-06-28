@@ -10,6 +10,13 @@
 
 <body>
 
+    <h1>Comics</h1>
+    <ul>
+        @foreach ($fumetti as $fumetto)
+        <li>{{ $fumetto }}</li>
+        @endforeach
+    </ul>
+
 </body>
 
 </html>
