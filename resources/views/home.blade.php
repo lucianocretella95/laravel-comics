@@ -12,7 +12,7 @@
 
     <h1>Comics</h1>
     <ul>
-        @foreach ($fumetti as $fumetto)
+        @foreach ($comics as $fumetto)
         <li>{{ $fumetto }}</li>
         @endforeach
     </ul>
